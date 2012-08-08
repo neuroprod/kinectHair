@@ -19,8 +19,8 @@
 		012D4C231532F24700249222 /* ShaderHair.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 012D4C201532F24700249222 /* ShaderHair.vsh */; };
 		01718D8E152EE6B0007AC037 /* KinectDepthTriangulation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01718D8D152EE6B0007AC037 /* KinectDepthTriangulation.cpp */; };
 		01718D93152EF65E007AC037 /* TriPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01718D92152EF65E007AC037 /* TriPoint.cpp */; };
+		01A169FD15D25A5300F5A1EA /* ofxKinect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01A169FB15D25A5300F5A1EA /* ofxKinect.cpp */; };
 		01CEEC5B152EE13E00CC065F /* FurryKinectApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01CEEC5A152EE13E00CC065F /* FurryKinectApp.cpp */; };
-		01DC7F411519DBC900398DDF /* ofxKinect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01DC7F3F1519DBC900398DDF /* ofxKinect.cpp */; };
 		27974FE1144D1A5A00BF8888 /* cameras.c in Sources */ = {isa = PBXBuildFile; fileRef = 27974FD5144D1A5A00BF8888 /* cameras.c */; };
 		27974FE2144D1A5A00BF8888 /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = 27974FD7144D1A5A00BF8888 /* core.c */; };
 		27974FE3144D1A5A00BF8888 /* registration.c in Sources */ = {isa = PBXBuildFile; fileRef = 27974FDC144D1A5A00BF8888 /* registration.c */; };
@@ -108,11 +108,11 @@
 		01718D90152EF5CC007AC037 /* TriPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriPoint.h; sourceTree = "<group>"; };
 		01718D91152EF5E5007AC037 /* TriSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriSquare.h; sourceTree = "<group>"; };
 		01718D92152EF65E007AC037 /* TriPoint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TriPoint.cpp; sourceTree = "<group>"; };
+		01A169FA15D25A5300F5A1EA /* ofxBase3DVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxBase3DVideo.h; sourceTree = "<group>"; };
+		01A169FB15D25A5300F5A1EA /* ofxKinect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxKinect.cpp; sourceTree = "<group>"; };
+		01A169FC15D25A5300F5A1EA /* ofxKinect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxKinect.h; sourceTree = "<group>"; };
 		01CEEC56152EE0EF00CC065F /* FurryKinectApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FurryKinectApp.h; sourceTree = "<group>"; };
 		01CEEC5A152EE13E00CC065F /* FurryKinectApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FurryKinectApp.cpp; sourceTree = "<group>"; };
-		01DC7F3E1519DBC900398DDF /* ofxBase3DVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxBase3DVideo.h; path = ../../../../of_v007/addons/ofxKinect/src/ofxBase3DVideo.h; sourceTree = "<group>"; };
-		01DC7F3F1519DBC900398DDF /* ofxKinect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxKinect.cpp; path = ../../../../of_v007/addons/ofxKinect/src/ofxKinect.cpp; sourceTree = "<group>"; };
-		01DC7F401519DBC900398DDF /* ofxKinect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxKinect.h; path = ../../../../of_v007/addons/ofxKinect/src/ofxKinect.h; sourceTree = "<group>"; };
 		27974FD5144D1A5A00BF8888 /* cameras.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cameras.c; path = ../../../addons/ofxKinect/libs/libfreenect/cameras.c; sourceTree = SOURCE_ROOT; };
 		27974FD6144D1A5A00BF8888 /* cameras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cameras.h; path = ../../../addons/ofxKinect/libs/libfreenect/cameras.h; sourceTree = SOURCE_ROOT; };
 		27974FD7144D1A5A00BF8888 /* core.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = core.c; path = ../../../addons/ofxKinect/libs/libfreenect/core.c; sourceTree = SOURCE_ROOT; };
@@ -379,9 +379,9 @@
 		30F2B58C1415565D00597A7B /* src */ = {
 			isa = PBXGroup;
 			children = (
-				01DC7F3E1519DBC900398DDF /* ofxBase3DVideo.h */,
-				01DC7F3F1519DBC900398DDF /* ofxKinect.cpp */,
-				01DC7F401519DBC900398DDF /* ofxKinect.h */,
+				01A169FA15D25A5300F5A1EA /* ofxBase3DVideo.h */,
+				01A169FB15D25A5300F5A1EA /* ofxKinect.cpp */,
+				01A169FC15D25A5300F5A1EA /* ofxKinect.h */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -835,7 +835,6 @@
 				27974FE3144D1A5A00BF8888 /* registration.c in Sources */,
 				27974FE4144D1A5A00BF8888 /* tilt.c in Sources */,
 				27974FE5144D1A5A00BF8888 /* usb_libusb10.c in Sources */,
-				01DC7F411519DBC900398DDF /* ofxKinect.cpp in Sources */,
 				01CEEC5B152EE13E00CC065F /* FurryKinectApp.cpp in Sources */,
 				01718D8E152EE6B0007AC037 /* KinectDepthTriangulation.cpp in Sources */,
 				01718D93152EF65E007AC037 /* TriPoint.cpp in Sources */,
@@ -849,6 +848,7 @@
 				012D4C211532F24700249222 /* ShaderHair.fsh in Sources */,
 				012D4C221532F24700249222 /* ShaderHair.gsh in Sources */,
 				012D4C231532F24700249222 /* ShaderHair.vsh in Sources */,
+				01A169FD15D25A5300F5A1EA /* ofxKinect.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

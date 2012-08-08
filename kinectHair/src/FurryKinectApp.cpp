@@ -47,7 +47,7 @@ void FurryKinectApp::setup() {
     // the gridSubH and gridSubW are the number of horizontal and vertical grid lines
     // the min and the max distance is the range in milimetres that gets triangulated
     //
-    // it generates trinagle objects, but also a vertices and indices array
+    // it generates triangle objects, but also a vertices and indices array
     //
     // You can change the depth range at runtime
     // setDepthRange(float minDepth,float maxDepth);
@@ -70,7 +70,7 @@ void FurryKinectApp::setup() {
     hairRenderer.setup();
     
     
-    // the tri renderer  renders the triangle output of the KinectDepthTriangulation behind the hairs, incase whe have holes in there
+    // the tri renderer  renders the triangle output of the KinectDepthTriangulation behind the hairs, in case we have holes in there
     triRenderer.setup();
     //
     
@@ -89,7 +89,7 @@ void FurryKinectApp::update() {
     
   
     if(kinect.isFrameNew()) {
-        // if whe have new kinect data, we set the isDirty to treu, so we know we have to update the output graphics
+        // if whe have new kinect data, we set the isDirty to true, so we know we have to update the output graphics
         isDirty =true;
         
    
@@ -183,7 +183,7 @@ void FurryKinectApp::draw() {
     
     glDisable(GL_DEPTH_TEST);
     //draws the background 
-    //we dont need a depth test for that, and we dont want the backgroud depth to interfere with the depth of the hairs
+    //we don't need a depth test for that, and we dont want the backgroud depth to interfere with the depth of the hairs
     triRenderer.draw(vertices, indices, numIndices);
     
     glEnable (GL_DEPTH_TEST);
